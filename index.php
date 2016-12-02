@@ -596,9 +596,6 @@
     
     echo "<div>$tsummary</div>";
     //////////////////////////////
-    $_SESSION["tsid"] = "$tid";
-         $sql = mysql_query("UPDATE users SET introverted='$introverted', extraverted='$extraverted', social='$social', intuitive='$intuitive', observant='$observant', thinking='$thinking', creative='$creative', feeling='$feeling', judging='$judging', prospecting='$prospecting', assertive='$assertive', turbulent='$turbulent' WHERE id='$tid'") 
-     or die (mysql_error());
     
     //output result 
     echo "<h4>Mind</h4>";
@@ -1565,5 +1562,3 @@ You often take initiative in social situations.
 </div>
 
 
-
-<?php include_once "footer.php";?>
